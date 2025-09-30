@@ -1,39 +1,45 @@
 public class Rucksack
 {
    //Eigenschaften
-   
     private String farbe;
     private int grosse;
     private boolean laptop;
     private int preis;
         
     //Constructor
-    public Rucksack(String newFarbe, int newGrosse, boolean newLaptop, int newPreis)
+    public Rucksack(String farbe, int grosse, boolean laptop, int preis)
     {
-        setFarbe(newFarbe);
-        setGrosse(newGrosse);
-        setLaptop(newLaptop);
-        setPreis(newPreis);
+        setFarbe(farbe);
+        setGrosse(grosse);
+        setLaptop(laptop);
+        setPreis(preis);
+    }
+    public Rucksack()
+    {
+        setFarbe("Blau");
+        setGrosse(20);
+        setLaptop(true);
+        setPreis(100);
     }
     
     //set-Methoden
-    public void setFarbe(String newFarbe)
+    public void setFarbe(String farbe)
     {
-        farbe = newFarbe;
+        this.farbe = farbe;
     }
-    public void setGrosse(int newGrosse)
+    public void setGrosse(int grosse)
     {
-        grosse = newGrosse;
+        this.grosse = grosse;
     }
-    public void setLaptop(boolean newLaptop)
+    public void setLaptop(boolean laptop)
     {
-        laptop = newLaptop;
+        this.laptop = laptop;
     }
-    public void setPreis(int newPreis)
+    public void setPreis(int preis)
     {
-        preis = newPreis;
+        this.preis = preis;
     }
-        
+    
     //get-Methoden
     public String getFarbe()
     {
