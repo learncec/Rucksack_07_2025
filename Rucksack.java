@@ -14,6 +14,12 @@ public class Rucksack
         setLaptop(laptop);
         setPreis(preis);
     }
+    public Rucksack(String farbe, boolean laptop, int preis)
+    {
+        setFarbe(farbe);
+        setLaptop(laptop);
+        setPreis(preis);   
+    }
     public Rucksack()
     {
         setFarbe("Blau");
@@ -59,8 +65,15 @@ public class Rucksack
     }
     
     //Print
+    //ifAbfrage:Eigenschaft:laptop-es gibt Laptop, oder kein Laptop
     public void printRucksack()
     {
-        System.out.println("Die Farbe ist: " + farbe + ", die Größe: " + grosse + ", hat Platz für Laptop " + laptop + " und der Preis kostet " + preis + " Euro.");
+        if(laptop == true)
+        {
+        System.out.println("Die Farbe ist: " + farbe + ", die Größe: " + grosse + ", hat Platz für Laptop " + "und der Preis kostet " + preis + " Euro.");         
+        }
+        else{
+        System.out.println("Die Farbe ist: " + farbe + ", die Größe: " + grosse + ", hat keinen Platz für Laptop " + ", der Preis kostet " + preis + " Euro.");
+        }
     }
 }
