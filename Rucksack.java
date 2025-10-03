@@ -17,9 +17,10 @@ public class Rucksack
     public Rucksack(String farbe, boolean laptop, int preis)
     {
         setFarbe(farbe);
+        setGrosse(15);
         setLaptop(laptop);
-        setPreis(preis);   
-    }
+        setPreis(preis);
+           }
     public Rucksack()
     {
         setFarbe("Blau");
